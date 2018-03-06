@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
 
-</body>
+    <title>
+      hello 2
+    </title>
+  </head>
+  <body>
+    <h1>welcome1</h1>
+    <h1>welcome2</h1>
+    <h1 id="w3">welcome3</h1>
+    <button onclick="hello()">
+      Click to say </button>
+    <script>
+    //
+    function hello() {
+      // querySelector返回第一个匹配选择器的元素
+      document.querySelector("h1").innerHTML = "Goodbye";
+      document.querySelector("#w3").innerHTML = "Goodbye";
+      alert("666");
+    }
+
+    }
+    </script>
+    <script>
+     const load = () => {
+       console.log("load event detected!");
+     }
+     window.onload = load;
+   </script>
+  </body>
 </html>
