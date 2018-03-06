@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+      colors 5
+    </title>
+
+
+    <script>
+        // "this" is Window object
+        console.log(this);
+        document.addEventListener('DOMContentLoaded', () => {
+          // "this" is Window object
+          console.log(this);
+
+          document.querySelector('#colors').onchange = () => {
+          document.querySelector('#counter').style.color = this.value;
+          // "this" is Window object
+          console.log(this);
+          };
+        });
+    </script>
+  </head>
+  <body>
+    <h1 id="counter">0</h1>
+    <select id="colors">
+      <option class="red" value="red">REEEED</option>
+      <option class="green" value="green">GREEEEEN</option>
+      <option class="blue" value="blue">bluuuue</option>
+      <option class="yellow" value="yellow">yeeeellow</option>
+    </select>
+
+  </body>
+</html>

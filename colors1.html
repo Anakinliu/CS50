@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+      Color 0
+    </title>
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll("#change-color").forEach(function(button) {
+          // forEach 对数组的每个元素执行回调函数, 回调函数的参数就是数组元素
+          // 参见https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+          button.onclick = function() {
+            document.querySelector(".txt").style.color = button.dataset.shit;
+          };
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <h1 class="txt">COLOR</h1>
+    <!--NOTE data-XX is element's attribute
+    that can access with dataset.XX in JS
+    -->
+    <button id="change-color" data-shit="red">Red</button>
+    <button id="change-color" data-shit="green">Green</button>
+    <button id="change-color" data-shit="blue">Blue</button>
+
+  </body>
+</html>

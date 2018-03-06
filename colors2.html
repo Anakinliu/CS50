@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+      Color 0
+    </title>
+
+    <script>
+    // arrow function fix JS "this"
+      document.addEventListener('DOMContentLoaded', ()  => {
+        document.querySelectorAll("#change-color").forEach(button => {
+          button.onclick = function() {
+            document.querySelector(".txt").style.color = button.dataset.shit;
+          };
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <h1 class="txt">COLOR</h1>
+    <!--NOTE data-XX is element's attribute
+    that can access with dataset.XX in JS
+    保存方式是 DOMStringMap {shit: "red"}
+    -->
+    <button id="change-color" data-shit="red">Red</button>
+    <button id="change-color" data-shit="green">Green</button>
+    <button id="change-color" data-shit="blue">Blue</button>
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+
+    </title>
+      my page
+    <script>
+
+      // let声明的变量在循环外不会存在
+      if (true) {
+        let message = "Hello. i am let";
+      }
+      //Uncaught ReferenceError: message is not defined
+    //at variables_let.html:15
+      alert(message);
+    </script>
+  </head>
+  <body>
+    welcome
+    <h1>
+      let声明的变量在循环外不会存在
+    </h1>
+  </body>
+</html>

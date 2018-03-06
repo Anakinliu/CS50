@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+      Color 0
+    </title>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        //to red text
+        // style attr is element's css attr
+        document.querySelector("#red").onclick = function() {
+          document.querySelector(".txt").style.color = 'red';
+
+        };
+
+        //to green text
+        document.querySelector("#green").onclick = function() {
+          document.querySelector(".txt").style.color = 'green';
+
+        };
+
+        //to blue text
+        document.querySelector("#blue").onclick = function() {
+          document.querySelector(".txt").style.color = 'blue';
+
+        };
+
+      });
+    </script>
+  </head>
+  <body>
+    <h1 class="txt">COLOR</h1>
+    <button id="red">Red</button>
+    <button id="green">green</button>
+    <button id="blue">blue</button>
+
+  </body>
+</html>
